@@ -12,7 +12,6 @@ const initialState = {
 export default (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
-     console.log(action.payload.count)
      const addOne = action.payload.count + 1
       return {
         count:addOne
@@ -20,8 +19,6 @@ export default (state = initialState, action) => {
     case DECREMENT:
       const decOne = action.payload.count -1
       return {
-        
-
         count: decOne
       }
     default:
