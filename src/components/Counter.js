@@ -9,6 +9,7 @@ class Counter extends Component {
         
         if(this.props.count % 2 != 0){
             this.props.increment(this.props.count)
+        
         }
     };
     
@@ -23,6 +24,7 @@ class Counter extends Component {
         // Upon clicking these buttons, the count
         // should decrement or increment accordingly
         return (
+            
             <p>
                 Clicked: {this.props.count} times
                 <button onClick={() => {this.props.increment(this.props.count)}}>
@@ -33,13 +35,15 @@ class Counter extends Component {
                 </button>
                  {/* Uncomment these button tags if you got
                 around to implementing the extra credit functions */}
-                {/* <button onClick={this.incrementIfOdd}>
+                 <button onClick={this.incrementIfOdd}>
                     Increment if odd
                 </button>
                 <button onClick={this.incrementAsync}>
                     Increment async
-                </button>  */}
+                </button>  
             </p>
+            
+            
         );
     }
 }
