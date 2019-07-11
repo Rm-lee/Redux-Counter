@@ -56,6 +56,8 @@ const title = {
     boxShadow: '4px 4px 4px #888888',
     fontSize:'1rem',
     borderRadius:'20px',
+    padding:'5px 0',
+    fontWeight:'bold'
   
     
 }
